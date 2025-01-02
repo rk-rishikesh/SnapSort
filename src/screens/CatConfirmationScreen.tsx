@@ -118,24 +118,44 @@ const CatConfirmationScreen = () => {
           <div className="flex flex-row gap-6">
             <div
               className="flex flex-col justify-center before:hidden before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 rounded-full p-1"
+              onClick={() =>
+                handleButtonClick(
+                  "Awesome, you completed 3 Tags today, reward on the way!"
+                )
+              }
             >
               <img className="w-12 rounded-full" src={currentData[subcategory].options[0].image} />
               <p className="flex justify-center text-sm pt-1">{currentData[subcategory].options[0].optionName}</p>
             </div>
             <div
               className="before:hidden before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 rounded-full p-1"
+              onClick={() =>
+                handleButtonClick(
+                  "Awesome, you completed 3 Tags today, reward on the way!"
+                )
+              }
             >
               <img className="w-12 rounded-full" src={currentData[subcategory].options[1].image} />
               <p className="flex justify-center text-sm pt-1">{currentData[subcategory].options[1].optionName}</p>
             </div>
             <div
               className="before:hidden before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 rounded-full p-1"
+              onClick={() =>
+                handleButtonClick(
+                  "Awesome, you completed 3 Tags today, reward on the way!"
+                )
+              }
             >
               <img className="w-12 rounded-full" src={currentData[subcategory].options[2].image} />
               <p className="flex justify-center text-sm pt-1">{currentData[subcategory].options[2].optionName}</p>
             </div>
             <div
               className="before:hidden before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 rounded-full p-1"
+              onClick={() =>
+                handleButtonClick(
+                  "Awesome, you completed 3 Tags today, reward on the way!"
+                )
+              }
             >
               <img className="w-12 rounded-full" src={currentData[subcategory].options[3].image} />
               <p className="flex justify-center text-sm pt-1">{currentData[subcategory].options[3].optionName}</p>
