@@ -54,6 +54,7 @@ const CatConfirmationScreen = () => {
   console.log(currentData[subcategory].images)
 
   const onTaskComplete = async () => {
+    console.log("A", currentIndex)
     if (currentIndex === 2) {
       setIsPopupVisible(true);
       console.log(sa)
@@ -69,7 +70,10 @@ const CatConfirmationScreen = () => {
       await sendTransaction(transactionRequest);
       console.log(txhash);
     } else {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % currentData.length);
+      console.log("B",currentIndex)
+      console.log(currentData[category].images.length)
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % currentData[category].images.length);
+      console.log("C", currentIndex)
     }
   };
 
@@ -84,7 +88,7 @@ const CatConfirmationScreen = () => {
   };
 
   const handleKeepTagging = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % currentData.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % currentData[category].images.length);
     handleClosePopup();
     setBal(Number(addressData?.formatted) * 2500);
   };
@@ -183,7 +187,7 @@ const CatConfirmationScreen = () => {
             {isConfirmed && (
               <div className="flex gap-2 justify-center">
                 <a
-                  href={`https://testnet.bscscan.com/tx/${txhash}`}
+                  href={`https://edu-chain-testnet.blockscout.com/tx/${txhash}`}
                   target="_blank"
                   className="bg-gray-500 text-white px-4 py-2 rounded-full"
                 >

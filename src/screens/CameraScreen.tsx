@@ -142,7 +142,7 @@ const CameraScreen = () => {
               />
               <button
                 onClick={handlePublish}
-                className="fixed bottom-8 z-10 mt-6 px-8 py-3 bg-gray-600 text-white text-lg font-medium rounded-lg shadow-lg hover:scale-105 transition-all duration-300 hover:shadow-2xl"
+                className="fixed bottom-8 z-10 mt-6 px-8 py-3 bg-home text-white text-lg font-medium rounded-full shadow-lg hover:scale-105 transition-all duration-300 hover:shadow-2xl"
               >
                 Publish
               </button>
@@ -151,20 +151,20 @@ const CameraScreen = () => {
         </div>
       )}
       {showPopup && (
-        <div className="fixed inset-0 flex items-center justify-center bg-opacity-50">
-          <div className="flex flex-col items-center justify-centerp-6 rounded-lg transform scale-100 transition-transform duration-300 hover:scale-105">
+        <div className="fixed inset-0 flex items-center justify-center bg-home">
+          <div className="flex flex-col items-center justify-center p-6 rounded-lg transform scale-100 transition-transform duration-300 hover:scale-105">
             <img
-              src="/images/tick.png"
+              src="https://cdn-icons-png.flaticon.com/512/5899/5899697.png"
               alt="Captured"
               className="w-full object-cover rounded-lg"
             />
-            <h2 className="flex items-center justify-center text-xl text-gray-800 font-semibold">
-              Your data is securedly stored on Filecoin
+            <h2 className="flex items-center justify-center font-chalk text-xl text-gray-200 font-semibold">
+              Data stored on Filecoin
             </h2>
 
             <button
               onClick={closePopup}
-              className="mt-4 px-6 py-2 bg-gray-500 text-white text-sm font-medium rounded-md shadow hover:shadow-lg transition-all duration-300"
+              className="mt-4 px-6 py-2 bg-button text-black text-sm font-medium rounded-full shadow hover:shadow-lg transition-all duration-300"
             >
               Close
             </button>

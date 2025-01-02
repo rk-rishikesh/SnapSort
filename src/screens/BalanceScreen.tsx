@@ -46,22 +46,46 @@ const BalanceScreen = () => {
     return (
         <div className="flex flex-col min-h-screen bg-board bg-cover">
             <div className="flex-grow overflow-y-auto p-2">
-                <div className="w-full sm:w-3/4 md:w-2/3 lg:w-full h-36 sm:h-40 rounded-xl mt-4 relative p-12">
+                {/* <div className="w-full sm:w-3/4 md:w-2/3 lg:w-full h-36 sm:h-40 rounded-xl mt-4 relative p-12">
                     <div className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 rounded-full">
                         <button onClick={logout}>
-                            <img
-
-                                src="/images/user-profile.jpg"
-                                alt="User Profile"
-                                className="w-24 h-24 sm:w-28 sm:h-28 rounded-full border-4 border-white"
-                            />
+                            X
                         </button>
 
                     </div>
+                </div> */}
+                <div className="right-2 fixed">
+
+                    <button
+                        className="group flex items-center justify-center relative z-10 [transition:all_0.5s_ease] rounded-[0.375rem] p-[5px] cursor-pointer border bg-[#1d856a] outline-none focus-visible:outline-0"
+                    >
+                        <svg
+                            fill="currentColor"
+                            stroke="none"
+                            stroke-width="0"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="w-7 h-7 overflow-visible [transition:transform_.35s_ease] group-hover:[transition-delay:.25s] [&amp;_path]:[transition:transform_.35s_ease] group-hover:rotate-45"
+                        >
+                            <path
+                                className="group-hover:[transform:rotate(112.5deg)_translate(-27.2%,-80.2%)]"
+                                d="m3.45,8.83c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31L14.71,2.08c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31L3.84,8.75c-.13.05-.25.08-.38.08Z"
+                            ></path>
+                            <path
+                                className="group-hover:[transform:rotate(22.5deg)_translate(15.5%,-23%)]"
+                                d="m2.02,17.13c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31L21.6,6.94c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31L2.4,17.06c-.13.05-.25.08-.38.08Z"
+                            ></path>
+                            <path
+                                className="group-hover:[transform:rotate(112.5deg)_translate(-15%,-149.5%)]"
+                                d="m8.91,21.99c-.39,0-.76-.23-.92-.62-.21-.51.03-1.1.54-1.31l11.64-4.82c.51-.21,1.1.03,1.31.54.21.51-.03,1.1-.54,1.31l-11.64,4.82c-.13.05-.25.08-.38.08Z"
+                            ></path>
+                        </svg>
+                    </button>
+
                 </div>
 
                 {ready && authenticated ?
-                    <div className="flex-grow flex flex-col items-center justify-start p-4 mt-6">
+                    <div className="flex-grow flex flex-col items-center justify-start p-4 mt-28">
                         <div className="mt-2 text-2xl sm:text-3xl text-center flex justify-center items-center space-x-2">
                             <span className="truncate max-w-xs text-white">{displayText}</span>
                             <FaCopy
@@ -72,36 +96,18 @@ const BalanceScreen = () => {
                             {isCopied && <span className="text-sm text-green-500">Copied!</span>}
                             <img onClick={openPopup} className="w-8 h-8" src="/images/verified.png" />
                         </div>
-   
-                        <button className="group relative w-full mt-12 flex justify-center">
-                            <div
-                                className="w-60 h-60 absolute -inset-1 rounded-full bg-gradient-to-r from-teal-500 via-emerald-500 to-green-500 opacity-20 blur-xl transition-all duration-500 group-hover:opacity-50 group-hover:blur-2xl"
-                            ></div>
-                            <div
-                                className="w-60 h-60 relative flex justify-center items-center gap-2 rounded-full border border-slate-800 bg-slate-950 p-1 pr-4 "
-                            >
-                                <div className="flex items-center gap-3 rounded-lg  px-3 py-2">
-                                    <div className="relative">
-                                        <div
-                                            className="absolute -inset-1 rounded-lg 0 blur-sm transition-all duration-300 group-hover:bg-teal-500/30 group-hover:blur-md"
-                                        ></div>
 
-                                    </div>
+                        <div className="flex flex-col w-[19rem] h-[17.5rem] mt-8 items-center" style={{ backgroundImage: `url("/images/xx.png")`, backgroundSize: "cover" }}>
+                            <div className="flex flex-col gap-2 mt-20 justify-center items-center">
 
-
-
-                                    <div className="flex flex-col">
-                                        <div className="flex items-center gap-1">
-                                            <span className="text-lg font-bold text-white">{`${addressData?.formatted.slice(0, 10)} ${addressData?.symbol}`}</span>
-
-                                        </div>
-                                        <span className="text-[10px] font-medium text-slate-400">Balance</span>
-                                    </div>
-
-
+                                <span className="text-[20px] font-medium text-slate-200 font-chalk">Reward Amount</span>
+                                <div className="flex items-center gap-1">
+                                    <span className="text-lg font-rubik font-bold text-white">{`${addressData?.formatted.slice(0, 10)} ${addressData?.symbol}`}</span>
                                 </div>
                             </div>
-                        </button>
+                        </div>
+
+
                     </div>
                     :
                     <div className='w-full flex gap-8 mt-16'>

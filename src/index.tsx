@@ -18,21 +18,21 @@ import { Provider } from 'react-redux';
 //  Chain Configuration
 
 const customChain = defineChain({
-  id: 97,
-  name: 'BSC Testnet',
+  id: 656476,
+  name: 'Educhain Testnet',
   nativeCurrency: {
     decimals: 18,
-    name: 'BNB',
-    symbol: 'BNB',
+    name: 'EDU',
+    symbol: 'EDU',
   },
   rpcUrls: {
     default: {
-      http: ['https://bsc-testnet.public.blastapi.io'],
-      webSocket: ['wss://bsc-testnet-rpc.publicnode.com'],
+      http: ['https://open-campus-codex-sepolia.drpc.org'],
+      webSocket: ['wss://open-campus-codex-sepolia.drpc.org'],
     },
   },
   blockExplorers: {
-    default: { name: 'Explorer', url: 'https://testnet.bscscan.com/' },
+    default: { name: 'Explorer', url: 'https://edu-chain-testnet.blockscout.com/' },
   },
   // contracts: {
   //   multicall3: {

@@ -172,17 +172,17 @@ export const categories = [
                     {
                         option: 1,
                         image: "/images/categoryFour/options/two.png",
-                        optionName: "Railway",
+                        optionName: "Waterway",
                     },
                     {
                         option: 2,
                         image: "/images/categoryFour/options/three.png",
-                        optionName: "Airway",
+                        optionName: "Railway",
                     },
                     {
                         option: 3,
                         image: "/images/categoryFour/options/four.png",
-                        optionName: "Waterway",
+                        optionName: "Airway",
                     }
                 ],
                 photoCount: "4 photos",
