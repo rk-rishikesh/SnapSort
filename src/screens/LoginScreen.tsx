@@ -16,14 +16,14 @@ const LoginScreen = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-between h-screen py-8 bg-home px-4 sm:px-8">
-      <div className="bg-home rounded-full w-36 h-12 flex items-center justify-center p-2 sm:w-48 sm:h-14">
-        <h1 className="text-xl font-bold text-white sm:text-2xl">SnapSort</h1>
+    <div className="flex flex-col items-center justify-between h-screen py-8 bg-classroom bg-cover px-4 sm:px-8">
+      <div className="bg-button rounded-full w-36 h-12 flex items-center justify-center p-2 sm:w-48 sm:h-14">
+        <h1 className="text-xl font-bold text-home sm:text-2xl">SnapSort</h1>
       </div>
       <div className="flex flex-col items-center mt-8 sm:mt-12">
-        <div className="w-56 h-56 flex items-center justify-center">
-          <img src="/images/home.jpg" />
-        </div>
+        {/* <div className="w-56 h-56 flex items-center justify-center">
+          <img src="/images/home.png" />
+        </div> */}
       </div>
       <div className="flex items-center justify-center mb-8 sm:mb-12">
         {ready && !authenticated && (

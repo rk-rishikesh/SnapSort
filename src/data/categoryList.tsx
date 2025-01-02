@@ -1,53 +1,70 @@
 export const categories = [
     {
         id: 0,
-        category: "Agriculture",
-        description: "Empower farmers and researchers by capturing real-time images of crops, pests, and soil to drive sustainable farming and food security.",
-        image: "/images/categories/agriculture.jpg",
+        category: "Science and Technology",
+        description: "Foster climate consciousness and learn about various environmental patterns.",
+        image: "/images/categories/categoryOne.jpg",
         items: [
             {
                 id:0,
-                name: "Drought-Stressed Crops",
+                name: "Renewable Energy",
                 images: [
                     "/images/categoryOne/One.jpg",
                     "/images/categoryOne/Two.jpg",
                     "/images/categoryOne/Three.jpg",
                     "/images/categoryOne/Four.jpg"
                 ],
-                question: "Are these drought-stressed crops?"
+                question: "Is this source of renewable energy?",
+                photoCount: "4 photos",
+                size: "42 MB",
             },
             {
                 id:1,
-                name: "Pest-Infested Crops",
-                images: []
+                name: "Transportation",
+                images: [],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",               
             },
             {
                 id:2,
                 name: "Weed Growth Patterns",
-                images: []
+                images: [],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",
             },
         ]
     },
     {
         id: 1,
-        category: "Pets",
-        description: "Document pet health, behavior, and environments to support studies in animal welfare, genetics, and urban wildlife.",
-        image: "/images/categories/pet.jpg",
+        category: "History and Culture",
+        description: "Encourage cultural and historical learning by capturing and tagging images of traditions, landmarks, and events, creating a global archive of shared heritage.",
+        image: "/images/categories/categoryTwo.jpg",
         items: [
             {
                 id:0,
-                name: "Close-up shots of pets' teeth",
-                images: []
+                name: "Historical Landmarks",
+                images: [],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",
             },
             {
                 id:1,
-                name: "Pets engaging with toys",
-                images: []
+                name: "Cultural Events",
+                images: [],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",
             },
             {
                 id:2,
-                name: "Pets with skin conditions",
-                images: []
+                name: "Art and Architecture",
+                images: [],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",
             },
         ]
     },
@@ -55,7 +72,7 @@ export const categories = [
         id: 2,
         category: "Climate & Weather",
         description: "Track weather patterns, pollution, and natural phenomena through user-generated photos for climate change and environmental research.",
-        image: "/images/categories/climate.jpg",
+        image: "/images/categories/categoryThree.jpg",
         items: [
             {
                 id:0,
@@ -66,12 +83,17 @@ export const categories = [
                     "/images/categoryThree/Three.jpg",
                     "/images/categoryThree/Four.jpg"
                 ],
-                question: "Does it seem to rain soon?"
+                question: "Does it seem to rain soon?",
+                photoCount: "4 photos",
+                size: "42 MB",
             },
             {
                 id:1,
                 name: "Intense heat waves",
-                images: []
+                images: [],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",
             },
             {
                 id:2,
@@ -82,36 +104,47 @@ export const categories = [
                     "",
                     "",
                     ""
-                ]
+                ],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",
             },
         ]
     },
     {
         id: 3,
-        category: "Urban Development",
+        category: "Everyday Life",
         description: "Capture urban landscapes, infrastructure, and societal trends to aid studies in city planning, housing, and sustainable growth.",
-        image: "/images/categories/urban.jpg",
+        image: "/images/categories/categoryFour.jpg",
         items: [
             {
                 id:0,
-                name: "Broken roads & bridges",
+                name: "Clothing and Textiles",
                 images: [
                     "/images/categoryFour/One.jpg",
                     "/images/categoryFour/Two.jpg",
                     "/images/categoryFour/Three.jpg",
                     "/images/categoryFour/Four.jpg"
                 ],
-                question: "Is the road completely inaccessible?"
+                question: "Is the road completely inaccessible?",
+                photoCount: "4 photos",
+                size: "40 MB",
             },
             {
                 id:1,
-                name: "Traffic Congestion",
-                images: []
+                name: "Food and Agricultur",
+                images: [],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",
             },
             {
                 id:2,
-                name: "Solar Panel Installations",
-                images: []
+                name: "Transportation Modes",
+                images: [],
+                question: "",
+                photoCount: "0 photos",
+                size: "0 MB",
             },
         ]
     },

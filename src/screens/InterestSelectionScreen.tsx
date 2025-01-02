@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from 'react-redux';
 import { CategoryState, setCategory, setSubCategory, SubCategoryState } from '../store/stringSlice';
 import { categories } from "../data/categoryList";
+import { size } from "viem";
 
 const InterestSelectionScreen = () => {
   const dispatch = useDispatch();
@@ -36,7 +37,10 @@ const InterestSelectionScreen = () => {
 
             <div className="grid grid-cols-1 w-full gap-4 px-4 py-2" key={item.id}>
               <div onClick={() => handleCategoryExpansion(item.id)} style={{ backgroundImage: `url(${item.image})` }} className="bg-cover group rounded-lg p-12 transition relative duration-300 cursor-pointer">
-                <p className="text-home text-2xl flex justify-start pt-2 fill-blue-500">{item.category}</p>
+                {/* <p className="text-home text-2xl flex justify-start pt-2 fill-blue-500">&nbsp;</p> */}
+                <div className="h-24">
+
+                </div>
               </div>
             </div>
           ))}
@@ -83,8 +87,8 @@ const InterestSelectionScreen = () => {
                         </div>
                         <div className="w-auto p-2 ">
                           <h2 className="text-sm font-medium text-coolGray-900">{item.name}</h2>
-                          <h3 className="text-xs font-medium text-coolGray-400">44 photos</h3>
-                          <p className="text-xs text-coolGray-500 font-medium">128 GB</p>
+                          <h3 className="text-xs font-medium text-coolGray-400">{item.photoCount}</h3>
+                          <p className="text-xs text-coolGray-500 font-medium">{item.size}</p>
                         </div>
                       </div>
                     </div>

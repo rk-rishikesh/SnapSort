@@ -44,9 +44,9 @@ const BalanceScreen = () => {
     }
 
     return (
-        <div className="flex flex-col min-h-screen bg-home">
+        <div className="flex flex-col min-h-screen bg-board bg-cover">
             <div className="flex-grow overflow-y-auto p-2">
-                <div className="w-full sm:w-3/4 md:w-2/3 lg:w-full h-36 sm:h-40 bg-white rounded-xl mt-4 relative p-12">
+                <div className="w-full sm:w-3/4 md:w-2/3 lg:w-full h-36 sm:h-40 rounded-xl mt-4 relative p-12">
                     <div className="absolute bottom-[-40px] left-1/2 transform -translate-x-1/2 rounded-full">
                         <button onClick={logout}>
                             <img
