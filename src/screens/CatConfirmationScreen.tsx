@@ -103,42 +103,46 @@ const CatConfirmationScreen = () => {
         <div className="flex flex-col items-center flex-grow p-4 sm:p-5">
           <div className="relative w-full flex-grow flex items-center justify-center"></div>
         </div>
+
         <div
-          className="hover:scale-x-105 transition-all duration-300 *:transition-all *:duration-300 flex justify-start text-2xl items-center shadow-xl z-10 bg-[#B7DFFB] gap-2 p-2 rounded-xl"
+          className="card relative flex flex-col items-center  h-[8em] w-full justify-center overflow-clip rounded-[1.5em] bg-[#B7DFFB] p-4 shadow-[0px_2px_2px_0px_#1a4766,0px_2px_8px_0px_#3083bb] gap-2 "
         >
-          <div
-            className="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Like'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-          >
-            👍
+          <div>
+            <span
+              className="max-w-[15ch] text-center font-Poppin text-[-0.8em] font-bold text-[#085991] mt-4"
+            >
+              {currentData[subcategory].question}
+            </span>
           </div>
-          <div
-            className="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Cheer'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-          >
-            👏🏻
-          </div>
-          <div
-            className="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Celebrate'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-          >
-            🎉
-          </div>
-          <div
-            className="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Appreciate'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-          >
-            ✨
-          </div>
-          <div
-            className="before:hidden hover:before:flex before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:content-['Smile'] before:bg-black dark:before:bg-white dark:before:text-black before:text-white before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 bg-white dark:bg-[#191818] rounded-full p-2 px-3"
-          >
-            🙂
+
+          <div className="flex flex-row gap-6">
+            <div
+              className="flex flex-col justify-center before:hidden before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 rounded-full p-1"
+            >
+              <img className="w-12 rounded-full" src={currentData[subcategory].options[0].image} />
+              <p className="flex justify-center text-sm pt-1">{currentData[subcategory].options[0].optionName}</p>
+            </div>
+            <div
+              className="before:hidden before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 rounded-full p-1"
+            >
+              <img className="w-12 rounded-full" src={currentData[subcategory].options[1].image} />
+              <p className="flex justify-center text-sm pt-1">{currentData[subcategory].options[1].optionName}</p>
+            </div>
+            <div
+              className="before:hidden before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 rounded-full p-1"
+            >
+              <img className="w-12 rounded-full" src={currentData[subcategory].options[2].image} />
+              <p className="flex justify-center text-sm pt-1">{currentData[subcategory].options[2].optionName}</p>
+            </div>
+            <div
+              className="before:hidden before:justify-center before:items-center before:h-4 before:text-[.6rem] before:px-1 before:bg-opacity-50 before:absolute before:-top-7 before:rounded-lg hover:-translate-y-5 cursor-pointer hover:scale-125 rounded-full p-1"
+            >
+              <img className="w-12 rounded-full" src={currentData[subcategory].options[3].image} />
+              <p className="flex justify-center text-sm pt-1">{currentData[subcategory].options[3].optionName}</p>
+            </div>
           </div>
         </div>
 
-
-        {/* <div
-          className="card relative flex h-[6em] w-full items-start justify-center overflow-clip rounded-[1.5em] bg-[#B7DFFB] px-[1em] py-[1em] shadow-[0px_2px_2px_0px_#1a4766,0px_2px_8px_0px_#3083bb]"
-        >
-          
-        </div> */}
       </div>
       <div className="flex-shrink-0">
         <Header onOptionChange={() => { }} />

@@ -6,7 +6,7 @@ export const categories = [
         image: "/images/categories/categoryOne.jpg",
         items: [
             {
-                id:0,
+                id: 0,
                 name: "Renewable Energy",
                 images: [
                     "/images/categoryOne/One.jpg",
@@ -14,23 +14,38 @@ export const categories = [
                     "/images/categoryOne/Three.jpg",
                     "/images/categoryOne/Four.jpg"
                 ],
-                question: "Is this source of renewable energy?",
+                question: "Select renewable energy depicted",
+                options: [
+                    {
+                        option: 0,
+                        image: "/images/categoryOne/options/one.png",
+                        optionName: "Wind",
+                    },
+                    {
+                        option: 1,
+                        image: "/images/categoryOne/options/two.png",
+                        optionName: "Solar",
+                    },
+                    {
+                        option: 2,
+                        image: "/images/categoryOne/options/three.png",
+                        optionName: "Hydro",
+                    },
+                    {
+                        option: 3,
+                        image: "/images/categoryOne/options/four.png",
+                        optionName: "Biomass",
+                    }
+                ],
                 photoCount: "4 photos",
                 size: "42 MB",
             },
             {
-                id:1,
-                name: "Transportation",
-                images: [],
-                question: "",
-                photoCount: "0 photos",
-                size: "0 MB",               
-            },
-            {
-                id:2,
+                id: 1,
                 name: "Weed Growth Patterns",
                 images: [],
                 question: "",
+                options: [],
                 photoCount: "0 photos",
                 size: "0 MB",
             },
@@ -43,26 +58,29 @@ export const categories = [
         image: "/images/categories/categoryTwo.jpg",
         items: [
             {
-                id:0,
+                id: 0,
                 name: "Historical Landmarks",
                 images: [],
                 question: "",
+                options: [],
                 photoCount: "0 photos",
                 size: "0 MB",
             },
             {
-                id:1,
+                id: 1,
                 name: "Cultural Events",
                 images: [],
                 question: "",
+                options: [],
                 photoCount: "0 photos",
                 size: "0 MB",
             },
             {
-                id:2,
+                id: 2,
                 name: "Art and Architecture",
                 images: [],
                 question: "",
+                options: [],
                 photoCount: "0 photos",
                 size: "0 MB",
             },
@@ -75,7 +93,7 @@ export const categories = [
         image: "/images/categories/categoryThree.jpg",
         items: [
             {
-                id:0,
+                id: 0,
                 name: "Cloud Types",
                 images: [
                     "/images/categoryThree/One.jpg",
@@ -83,29 +101,47 @@ export const categories = [
                     "/images/categoryThree/Three.jpg",
                     "/images/categoryThree/Four.jpg"
                 ],
-                question: "Does it seem to rain soon?",
+                question: "How is the weather?",
+                options: [
+                    {
+                        option: 0,
+                        image: "/images/categoryThree/options/one.png",
+                        optionName: "Rainy",
+                    },
+                    {
+                        option: 1,
+                        image: "/images/categoryThree/options/two.png",
+                        optionName: "Sunny",
+                    },
+                    {
+                        option: 2,
+                        image: "/images/categoryThree/options/three.png",
+                        optionName: "Windy",
+                    },
+                    {
+                        option: 3,
+                        image: "/images/categoryThree/options/four.png",
+                        optionName: "Snowy",
+                    }
+                ],
                 photoCount: "4 photos",
                 size: "42 MB",
             },
             {
-                id:1,
+                id: 1,
                 name: "Intense heat waves",
                 images: [],
                 question: "",
+                options: [],
                 photoCount: "0 photos",
                 size: "0 MB",
             },
             {
-                id:2,
+                id: 2,
                 name: "Drought Land",
-                images: [
-                    "",
-                    "",
-                    "",
-                    "",
-                    ""
-                ],
+                images: [],
                 question: "",
+                options: [],
                 photoCount: "0 photos",
                 size: "0 MB",
             },
@@ -118,31 +154,55 @@ export const categories = [
         image: "/images/categories/categoryFour.jpg",
         items: [
             {
-                id:0,
-                name: "Clothing and Textiles",
+                id: 0,
+                name: "Transportation Modes",
                 images: [
                     "/images/categoryFour/One.jpg",
                     "/images/categoryFour/Two.jpg",
                     "/images/categoryFour/Three.jpg",
                     "/images/categoryFour/Four.jpg"
                 ],
-                question: "Is the road completely inaccessible?",
+                question: "What's the transportation route here?",
+                options: [
+                    {
+                        option: 0,
+                        image: "/images/categoryFour/options/one.png",
+                        optionName: "Roadway",
+                    },
+                    {
+                        option: 1,
+                        image: "/images/categoryFour/options/two.png",
+                        optionName: "Railway",
+                    },
+                    {
+                        option: 2,
+                        image: "/images/categoryFour/options/three.png",
+                        optionName: "Airway",
+                    },
+                    {
+                        option: 3,
+                        image: "/images/categoryFour/options/four.png",
+                        optionName: "Waterway",
+                    }
+                ],
                 photoCount: "4 photos",
                 size: "40 MB",
             },
             {
-                id:1,
+                id: 1,
                 name: "Food and Agricultur",
                 images: [],
                 question: "",
+                options: [],
                 photoCount: "0 photos",
                 size: "0 MB",
             },
             {
-                id:2,
-                name: "Transportation Modes",
+                id: 2,
+                name: "Clothing and Textile",
                 images: [],
                 question: "",
+                options: [],
                 photoCount: "0 photos",
                 size: "0 MB",
             },
