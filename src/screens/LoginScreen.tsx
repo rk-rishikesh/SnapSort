@@ -30,7 +30,7 @@ const LoginScreen = () => {
           <>
             <div className="flex items-center gap-4">
               <button
-                className="px-4 py-2 bg-white text-black rounded w-full max-w-xs sm:w-48 sm:py-3 font-semibold text-lg sm:text-xl"
+                className="px-4 py-2 bg-white text-black rounded-full w-full max-w-xs sm:w-48 sm:py-3 font-semibold text-lg sm:text-xl"
                 onClick={login}
                 type="button"
               >
@@ -42,7 +42,7 @@ const LoginScreen = () => {
         {ready && authenticated && (
           <>
             <button
-              className="px-4 py-2 bg-white text-black rounded w-full max-w-xs sm:w-48 sm:py-3 font-semibold text-lg sm:text-xl"
+              className="px-4 py-2 bg-white text-black rounded-full w-full max-w-xs sm:w-48 sm:py-3 font-semibold text-lg sm:text-xl"
               onClick={() => navigate("/screen3")}
               type="button"
             >
