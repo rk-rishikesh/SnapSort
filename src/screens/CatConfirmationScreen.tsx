@@ -51,7 +51,7 @@ const CatConfirmationScreen = () => {
   });
 
   const currentData = categories[category].items;
-  console.log(currentData[subcategory].images)
+  console.log(currentData[subcategory].images.length)
 
   const onTaskComplete = async () => {
     console.log("A", currentIndex)
@@ -71,8 +71,8 @@ const CatConfirmationScreen = () => {
       console.log(txhash);
     } else {
       console.log("B",currentIndex)
-      console.log(currentData[category].images.length)
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % currentData[category].images.length);
+      console.log(currentData[subcategory].images.length)
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % currentData[subcategory].images.length);
       console.log("C", currentIndex)
     }
   };
